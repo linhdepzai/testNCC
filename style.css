@@ -81,6 +81,7 @@ a {
     width: 100%;
     background-color: var(--white-color);
     z-index: 1;
+    border-top: 1px solid rgb(180, 180, 180);
 }
 
 .content_title {
@@ -88,6 +89,11 @@ a {
 }
 
 @media(max-width: 1000px) {
+    body {
+        position: relative;
+        padding: 0;
+    }
+    
     .content_item {
         overflow: auto;
         display: block;
@@ -125,5 +131,9 @@ a {
 
     .content_title {
         padding: 2rem 0;
+    }
+
+    .content {
+        padding: 0;
     }
 }
